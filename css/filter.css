@@ -1,0 +1,38 @@
+ul#menu {
+    margin-top: 5%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0;
+    font-weight: 400;
+}
+
+ul#menu li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+#menu {
+    outline:none;
+    padding: 10px 20px 8px 20px;
+    color: #888;
+    font-size:11px;
+    letter-spacing:3px;
+    text-decoration: none;
+    text-transform:uppercase;
+    //background:#eee;
+    border:none !important;
+}
+
+#menu a {
+    color:#888;
+    border: solid 1px #555;
+}
+
+#menu a:hover {
+    background:#111;
+}
+
+#menu a.selected {
+    border-color: #FAB702;
+    outline: 0px;
+}
