@@ -102,7 +102,7 @@ include('DB/connect.php');
 
                             <p><?php echo $conteudo; ?></p>
 
-                            <p><a class="btn btn-primary" href="noticia.php?id=<?php echo $id;?>" role="button">View details &raquo;</a></p>
+                            <p><a class="btn btn-primary" href="noticia.php?id=<?php echo $id;?>" role="button">Leia Mais.. &raquo;</a></p>
 
                         </div>
                     </div>
