@@ -7,7 +7,7 @@
  */
 ?>
 
-<form method="post" action="" enctype="multipart/form-data">
+<form method="post" action="funcoes/funcoes.php?funcao=gravar" enctype="multipart/form-data">
     <div class="form-group">
         <label for="titulo">Título</label>
         <input type="text" class="form-control" id="titulo" placeholder="Título" name="titulo" required>
@@ -22,7 +22,7 @@
     </div>
     <div class="form-group">
         <label for="data">Data da Postagem</label>
-        <input type="date" class="form-control" id="data" placeholder="Senha" name="data">
+        <input type="date" class="form-control" id="data" name="data">
     </div>
     <div class="form-group">
         <label for="cpf">CPF</label>

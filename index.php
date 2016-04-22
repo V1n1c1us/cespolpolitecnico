@@ -102,7 +102,8 @@ include('DB/connect.php');
 
                             <p><?php echo $conteudo; ?></p>
 
-                            <p><a class="btn btn-primary" href="noticia.php?id=<?php echo $id;?>" role="button">Leia Mais.. &raquo;</a></p>
+                            <p><a class="btn btn-primary" href="noticia.php?id=<?php echo $id; ?>" role="button">Leia
+                                    Mais.. &raquo;</a></p>
 
                         </div>
                     </div>
@@ -118,9 +119,9 @@ include('DB/connect.php');
             <div class="row">
                 <div class="col-lg-12 col-md-12 text-center">
                     <ul id="menu">
-                        <li data-toggle="portfilter" data-target="all">Colegio Politecnico</li>
+                        <li data-toggle="portfilter" data-target="colpoli">Colegio Politecnico</li>
                         <li data-toggle="portfilter" data-target="all">Ensino Medio Colegio Politecnico</li>
-                        <li data-toggle="portfilter" data-target="media">Tecnologo em Gestao de Cooperativas</li>
+                        <li data-toggle="portfilter" data-target="tecnogestcoo">Tecnologo em Gestao de Cooperativas</li>
                         <li data-toggle="portfilter" data-target="media">Tecnologo em Geoprocessamento</li>
                         <li data-toggle="portfilter" data-target="media">Tecnologo em Sistemas Para Internet</li>
                         <li data-toggle="portfilter" data-target="media">Tecnico em Informatica</li>
@@ -134,152 +135,33 @@ include('DB/connect.php');
                         <li data-toggle="portfilter" data-target="brand">Tecnico em Meio Ambiente</li>
                         <li data-toggle="portfilter" data-target="brand">Tecnico em Zootecnia</li>
                         <li data-toggle="portfilter" data-target="art">Sistemas para Internet</li>
-                        <li data-toggle="portfilter" data-target="art">Pos graduacao Agricultura de Precisao</li>
+                        <li data-toggle="portfilter" data-target="colpoli">Pos graduacao Agricultura de Precisao</li>
                     </ul>
                     <br/>
                     <ul class="gallery">
-                        <li class="col-lg-3 col-md-3 clearfix" data-tag='brand'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 clearfix" data-tag='art'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 clearfix" data-tag='media'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 clearfix" data-tag='brand'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 clearfix" data-tag='art'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 clearfix" data-tag='media'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3 clearfix" data-tag='brand'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3" data-tag='art'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3" data-tag='art'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3" data-tag='brand'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3" data-tag='brand'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3" data-tag='brand'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="col-lg-3 col-md-3" data-tag='media'>
-                            <div class="hoverzoom">
-                                <img
-                                    src="http://www.tblengenharia.com.br/wp-content/uploads/2012/07/maquete-270x170.jpg"/>
-                                <a href="#">
-                                    <div class="retina">
-                                        <p style="margin-top: 50px;">Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
+                        <?php
+
+                        $sqlSelect = $conn->query("SELECT * FROM produtos");
+
+                        while ($linha = $sqlSelect->fetch(PDO::FETCH_OBJ)) {
+                            $id = $linha->id;
+                            $nomeproduto = $linha->nomeproduto;
+                            $foto = $linha->foto;
+                            $descricao = $linha->descricao;
+                            $preco = $linha->preco;
+                            $nomecurso = $linha->nomecurso;
+                            ?>
+                            <li class="col-lg-3 col-md-3 clearfix" data-tag='<?php echo $nomecurso; ?>'>
+                                <div class="hoverzoom">
+                                    <img class="img img-responsive"
+                                         src="admin/funcoes/fotosProdutos/<?php echo $foto; ?>">
+                                </div>
+                            </li>
+                            <?php
+                        }
+                        ?>
                     </ul>
-
                 </div>
-
             </div>
         </div>
         <!-- Site footer -->

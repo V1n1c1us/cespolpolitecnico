@@ -75,15 +75,28 @@ include('DB/connect.php');
                 $titulo = $linha->titulo;
                 $data = $linha->to_char;
                 $conteudo = $linha->conteudo;
+                $foto = $linha->foto;
                 ?>
                 <h1 class="text-center"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <?php echo $titulo; ?></h1>
                 <hr>
-                <div class="col-md-8">
-                    <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                <div class="col-md-6">
+                    <?php if (empty($foto)) { ?>
+                        <img class="img img-responsive center-block"
+                             src="http://static.wixstatic.com/media/d63bb2_6bdc25bd77a9e7c7566fc2e2314a5193.jpg_512"
+                             alt="" style="height: 250px;">
+                        <?php
+                    } else {
+                        ?>
+                        <img class="img-responsive" src="admin/funcoes/fotosNoticia/<?php echo $foto; ?>"
+                             alt="<?php echo $titulo; ?>">
+                        <?php
+                    }
+                    ?>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <p><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></p>
+
                     <p> <?php echo $conteudo; ?> </p>
                 </div>
                 <?php
