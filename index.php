@@ -100,7 +100,7 @@ include('DB/connect.php');
 
                             <small><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></small>
 
-                            <p><?php echo $conteudo; ?></p>
+                            <p><?php echo substr($conteudo,0, 200);?>...</p>
 
                             <p><a class="btn btn-primary" href="noticia.php?id=<?php echo $id; ?>" role="button">Leia
                                     Mais.. &raquo;</a></p>

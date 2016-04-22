@@ -18,7 +18,7 @@
     </div>
     <div class="form-group">
         <label for="conteudo">Conteúdo</label>
-        <input type="text" class="form-control" id="conteudo" placeholder="Conteúdo da Notícia" name="conteudo" required>
+        <textarea class="form-control" id="conteudo" placeholder="Conteúdo da Notícia" name="conteudo" required></textarea>
     </div>
     <div class="form-group">
         <label for="data">Data da Postagem</label>
