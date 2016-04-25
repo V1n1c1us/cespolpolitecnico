@@ -24,6 +24,7 @@ include('DB/connect.php');
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="js/teste.js"></script>
 
     <![endif]-->
     <style>
@@ -35,21 +36,33 @@ include('DB/connect.php');
             border: 0;
             height: 1px;
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
         }
 
         li {
             list-style: none;
         }
+        ul#menu li.box{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px 0px;
+        }
+
 
         ul#menu li:hover {
             background: #5cb85c;
             color: white;
         }
+        .thumbnail{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px 0px;
+        }
+        /*#box1 {*/
+            /*box-shadow: 0 0 10px #000000;*/
+            /*-moz-box-shadow: 0 0 10px #000000;*/
+            /*-webkit-box-shadow: 0 0 10px #000000;*/
+        /*}*/
     </style>
 </head>
 <body>
 <div class="container">
-
     <!-- The justified navigation menu is meant for single line per list item.
          Multiple lines will require custom code not provided by Bootstrap.
            <!-- Jumbotron -->
@@ -76,25 +89,26 @@ include('DB/connect.php');
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-xs-12 col-md-12 col-lg-12">
                 <h1 class="text-center"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Noticias</h1>
                 <hr>
             </div>
         </div>
         <!-- Example row of columns -->
         <div class="row">
-
             <?php
-            $sql = $conn->query("SELECT id,titulo, to_char(data,'dd/mm/YYYY'),conteudo FROM noticia ORDER BY data DESC LIMIT 3");
+            $sql = $conn->query("SELECT id,titulo, to_char(data,'dd/mm/YYYY'),conteudo,foto FROM noticia ORDER BY data DESC LIMIT 3");
 
             while ($linha = $sql->fetch(PDO::FETCH_OBJ)) {
                 $id = $linha->id;
                 $titulo = $linha->titulo;
                 $data = $linha->to_char;
                 $conteudo = $linha->conteudo;
+                $foto = $linha->foto;
                 ?>
-                <div class="col-md-6 col-md-4">
-                    <div class="thumbnail">
+                <div class="col-xs-4 col-md-4 col-lg-4">
+                    <div class="thumbnail" id="box1">
+                        <img class="img img-responsive" src="admin/funcoes/fotosNoticia/<?php echo $foto;?>">
                         <div class="caption">
                             <h2 class="text-center"><?php echo $titulo; ?></h2>
 
@@ -119,23 +133,23 @@ include('DB/connect.php');
             <div class="row">
                 <div class="col-lg-12 col-md-12 text-center">
                     <ul id="menu">
-                        <li data-toggle="portfilter" data-target="colpoli">Colegio Politecnico</li>
-                        <li data-toggle="portfilter" data-target="all">Ensino Medio Colegio Politecnico</li>
-                        <li data-toggle="portfilter" data-target="tecnogestcoo">Tecnologo em Gestao de Cooperativas</li>
-                        <li data-toggle="portfilter" data-target="media">Tecnologo em Geoprocessamento</li>
-                        <li data-toggle="portfilter" data-target="media">Tecnologo em Sistemas Para Internet</li>
-                        <li data-toggle="portfilter" data-target="media">Tecnico em Informatica</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Paisagismo</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Administracao</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Agropecuaria</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Alimentos</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Contabilidade</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Geoprocessamento</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Secretariado</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Meio Ambiente</li>
-                        <li data-toggle="portfilter" data-target="brand">Tecnico em Zootecnia</li>
-                        <li data-toggle="portfilter" data-target="art">Sistemas para Internet</li>
-                        <li data-toggle="portfilter" data-target="colpoli">Pos graduacao Agricultura de Precisao</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="colpoli">Colegio Politecnico</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="all">Ensino Medio Colegio Politecnico</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecnogestcoo">Tecnologo em Gestao de Cooperativas</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="media">Tecnologo em Geoprocessamento</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="media">Tecnologo em Sistemas Para Internet</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="media">Tecnico em Informatica</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Paisagismo</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Administracao</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Agropecuaria</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Alimentos</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Contabilidade</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Geoprocessamento</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Secretariado</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Meio Ambiente</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Zootecnia</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="art">Sistemas para Internet</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="colpoli">Pos graduacao Agricultura de Precisao</li>
                     </ul>
                     <br/>
                     <ul class="gallery">
@@ -185,3 +199,4 @@ include('DB/connect.php');
     <script src="js/bootstrap-portfilter.min.js"></script>
 </body>
 </html>
+
