@@ -133,22 +133,22 @@ include('DB/connect.php');
             <div class="row">
                 <div class="col-lg-12 col-md-12 text-center">
                     <ul id="menu">
+                        <li class="btn box" data-toggle="portfilter" data-target="all">Produtos</li>
                         <li class="btn box" data-toggle="portfilter" data-target="colpoli">Colegio Politecnico</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="all">Ensino Medio Colegio Politecnico</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="empoli">Ensino Medio Colegio Politecnico</li>
                         <li class="btn box" data-toggle="portfilter" data-target="tecnogestcoo">Tecnologo em Gestao de Cooperativas</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="media">Tecnologo em Geoprocessamento</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="media">Tecnologo em Sistemas Para Internet</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="media">Tecnico em Informatica</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Paisagismo</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Administracao</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Agropecuaria</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Alimentos</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Contabilidade</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Geoprocessamento</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Secretariado</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Meio Ambiente</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="brand">Tecnico em Zootecnia</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="art">Sistemas para Internet</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecnogeo">Tecnologo em Geoprocessamento</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecnosist">Tecnologo em Sistemas Para Internet</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecinfo">Tecnico em Informatica</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecpa">Tecnico em Paisagismo</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecadm">Tecnico em Administracao</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecagro">Tecnico em Agropecuaria</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecalim">Tecnico em Alimentos</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="teccont">Tecnico em Contabilidade</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecgeo">Tecnico em Geoprocessamento</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecsec">Tecnico em Secretariado</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecma">Tecnico em Meio Ambiente</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="teczoo">Tecnico em Zootecnia</li>
                         <li class="btn box" data-toggle="portfilter" data-target="colpoli">Pos graduacao Agricultura de Precisao</li>
                     </ul>
                     <br/>
