@@ -10,15 +10,19 @@
 <form method="post" action="funcoes/funcoes.php?funcao=gravar" enctype="multipart/form-data">
     <div class="form-group">
         <label for="titulo">Título</label>
-        <input type="text" class="form-control" id="titulo" placeholder="Título" name="titulo" required>
+        <input type="text" class="form-control" id="titulo" placeholder="Título" name="titulo" >
     </div>
     <div class="form-group">
         <label for="fonte">Fonte</label>
         <input type="text" class="form-control" id="fonte" placeholder="De onde?" name="fonte">
     </div>
     <div class="form-group">
+        <label for="resumo">Resumo</label>
+        <input type="text" class="form-control" id="resumo" placeholder="Resumo da Notícia" name="resumo">
+    </div>
+    <div class="form-group">
         <label for="conteudo">Conteúdo</label>
-        <textarea class="form-control" id="conteudo" placeholder="Conteúdo da Notícia" name="conteudo" required></textarea>
+        <textarea class="form-control" id="conteudo" placeholder="Conteúdo da Notícia" name="conteudo" required style="width: 100%; height: 200px; font-size: 14px; line-height: 18px;"></textarea>
     </div>
     <div class="form-group">
         <label for="data">Data da Postagem</label>
@@ -30,3 +34,4 @@
     </div>
     <button type="submit" class="btn btn-success pull-right" id="btnPublicar" title="Publicar Notícia">Publicar</button>
 </form>
+<div id="status"></div>

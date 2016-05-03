@@ -97,7 +97,7 @@ include('DB/connect.php');
         <!-- Example row of columns -->
         <div class="row">
             <?php
-            $sql = $conn->query("SELECT id,titulo, to_char(data,'dd/mm/YYYY'),conteudo,foto FROM noticia ORDER BY data DESC LIMIT 3");
+            $sql = $conn->query("SELECT id,titulo, to_char(data,'dd/mm/YYYY'),conteudo,foto,resumo FROM noticia ORDER BY data DESC LIMIT 3");
 
             while ($linha = $sql->fetch(PDO::FETCH_OBJ)) {
                 $id = $linha->id;
@@ -105,6 +105,7 @@ include('DB/connect.php');
                 $data = $linha->to_char;
                 $conteudo = $linha->conteudo;
                 $foto = $linha->foto;
+                $resumo = $linha->resumo;
                 ?>
                 <div class="col-xs-4 col-md-4 col-lg-4">
                     <div class="thumbnail" id="box1">
@@ -114,7 +115,7 @@ include('DB/connect.php');
 
                             <small><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></small>
 
-                            <p><?php echo substr($conteudo,0, 200);?>...</p>
+                            <p><?php echo substr($resumo,0, 200);?>...</p>
 
                             <p><a class="btn btn-primary" href="noticia.php?id=<?php echo $id; ?>" role="button">Leia
                                     Mais.. &raquo;</a></p>

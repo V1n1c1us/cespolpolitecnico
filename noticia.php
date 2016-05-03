@@ -24,6 +24,7 @@ include('DB/connect.php');
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <style>
         * {
             font-family: 'Oswald', sans-serif;
@@ -77,27 +78,26 @@ include('DB/connect.php');
                 $conteudo = $linha->conteudo;
                 $foto = $linha->foto;
                 ?>
-                <h1 class="text-center"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <?php echo $titulo; ?></h1>
+                <h1 class="text-center"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <?php echo $titulo; ?><p><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></p></h1>
                 <hr>
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <?php if (empty($foto)) { ?>
                         <img class="img img-responsive center-block"
                              src="http://static.wixstatic.com/media/d63bb2_6bdc25bd77a9e7c7566fc2e2314a5193.jpg_512"
-                             alt="" style="height: 250px;">
+                             alt="" style="height: 250px;" width="500" height="500">
                         <?php
                     } else {
                         ?>
-                        <img class="img-responsive" src="admin/funcoes/fotosNoticia/<?php echo $foto; ?>"
-                             alt="<?php echo $titulo; ?>">
+<!--                        <img class="img img-responsive center-block"-->
+<!--                             src="admin/funcoes/fotosNoticia/--><?php //echo $foto; ?><!--"-->
+<!--                             alt="--><?php //echo $titulo; ?><!--" width="500" height="500">-->
+                        <p> <?php echo $conteudo; ?> </p>
                         <?php
                     }
                     ?>
                 </div>
-
                 <div class="col-md-6">
                     <p><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></p>
-
-                    <p> <?php echo $conteudo; ?> </p>
                 </div>
                 <?php
             }
