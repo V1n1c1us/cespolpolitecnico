@@ -92,47 +92,47 @@ include("DB/connect.php");
                 $foto = $linha->foto;
                 $resumo = $linha->resumo;
                 ?>
-                <!--                <div class="media">-->
-                <!--                    <div class="media-left">-->
-                <!--                        <a href="#">-->
-                <!--                            <img class="media-object" src="admin/funcoes/fotosNoticia/--><?php //echo $foto;?><!--"-->
-                <!--                                 style="width: 200px; height: 150px; padding: 10px;">-->
-                <!--                        </a>-->
-                <!--                    </div>-->
-                <!--                    <div class="media-body">-->
-                <!--                        <a href="noticia.php?id=--><?php //echo $id; ?><!--">-->
-                <!--                            <h3 class="media-heading fa fa-calendar fa-lg"> --><?php //echo $data;?><!-- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> --><?php //echo $titulo; ?><!--</h3>-->
-                <!---->
-                <!--                            <p>--><?php //echo substr($resumo, 0, 200); ?><!--...</p>-->
-                <!--                        </a>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-                <ul>
-                    <li>
-                        <a href="noticia.php?id=<?php echo $id; ?>">
-                            <h3 class="media-heading fa fa-calendar fa-lg">
-                                <?php echo $data; ?>
-                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                                <?php echo $titulo; ?>
-                            </h3>
-                        </a>
-                    </li>
-                </ul>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="admin/funcoes/fotosNoticia/<?php echo $foto;?>"
+                                                 style="width: 200px; height: 150px; padding: 10px;">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="noticia.php?id=<?php echo $id; ?>">
+                                            <h3 class="media-heading fa fa-calendar fa-lg"> <?php echo $data;?> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <?php echo $titulo; ?></h3>
 
-                <!--                <div class="col-md-7">-->
-                <!--                    <a href="#">-->
-                <!--                        <img class="img img-responsive" src="admin/funcoes/fotosNoticia/--><?php //echo $foto; ?><!--" style="width:700px;height: 300px; padding: 10px;">-->
-                <!--                    </a>-->
-                <!--                </div>-->
-                <!--                <div class="col-md-5">-->
-                <!--                    <h3>--><?php //echo $titulo; ?><!--</h3>-->
-                <!--                    <h4>-->
-                <!--                        <small><i class="fa fa-calendar fa-lg"> --><?php //echo $data; ?><!--</i></small>-->
-                <!--                    </h4>-->
-                <!--                    <p>--><?php //echo substr($resumo, 0, 200); ?><!--...</p>-->
-                <!--                    <a class="btn btn-primary" href="noticia.php?id=--><?php //echo $id; ?><!--">Leia-->
-                <!--                        Mais..<span class="glyphicon glyphicon-chevron-right"></span></a>-->
-                <!--                </div>-->
+                                            <p><?php echo substr($resumo, 0, 200); ?>...</p>
+                                        </a>
+                                    </div>
+                                </div>
+<!--                <ul>-->
+<!--                    <li>-->
+<!--                        <a href="noticia.php?id=--><?php //echo $id; ?><!--">-->
+<!--                            <h3 class="media-heading fa fa-calendar fa-lg">-->
+<!--                                --><?php //echo $data; ?>
+<!--                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
+<!--                                --><?php //echo $titulo; ?>
+<!--                            </h3>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!---->
+<!--                                <div class="col-md-7">-->
+<!--                                    <a href="#">-->
+<!--                                        <img class="img img-responsive" src="admin/funcoes/fotosNoticia/--><?php //echo $foto; ?><!--" style="width:700px;height: 300px; padding: 10px;">-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                                <div class="col-md-5">-->
+<!--                                    <h3>--><?php //echo $titulo; ?><!--</h3>-->
+<!--                                    <h4>-->
+<!--                                        <small><i class="fa fa-calendar fa-lg"> --><?php //echo $data; ?><!--</i></small>-->
+<!--                                    </h4>-->
+<!--                                    <p>--><?php //echo substr($resumo, 0, 200); ?><!--...</p>-->
+<!--                                    <a class="btn btn-primary" href="noticia.php?id=--><?php //echo $id; ?><!--">Leia-->
+<!--                                        Mais..<span class="glyphicon glyphicon-chevron-right"></span></a>-->
+<!--                                </div>-->
                 <?php
             }
             ?>
