@@ -77,8 +77,21 @@ include('DB/connect.php');
                 $data = $linha->to_char;
                 $conteudo = $linha->conteudo;
                 $foto = $linha->foto;
+                $resumo = $linha->resumo;
                 ?>
-                <h1 class="text-center"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <?php echo $titulo; ?><p><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></p></h1>
+                <div class="page-header text-center">
+                    <h1>
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <?php echo $titulo; ?>
+                    </h1>
+
+                    <h3>
+                        <small>
+                            <?php echo $resumo ?>
+                        </small>
+                    </h3>
+                </div>
+                <p><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></p>
                 <hr>
                 <div class="col-md-12">
                     <?php if (empty($foto)) { ?>
@@ -88,16 +101,13 @@ include('DB/connect.php');
                         <?php
                     } else {
                         ?>
-<!--                        <img class="img img-responsive center-block"-->
-<!--                             src="admin/funcoes/fotosNoticia/--><?php //echo $foto; ?><!--"-->
-<!--                             alt="--><?php //echo $titulo; ?><!--" width="500" height="500">-->
+                        <!--                        <img class="img img-responsive center-block"-->
+                        <!--                             src="admin/funcoes/fotosNoticia/--><?php //echo $foto; ?><!--"-->
+                        <!--                             alt="--><?php //echo $titulo; ?><!--" width="500" height="500">-->
                         <p> <?php echo $conteudo; ?> </p>
                         <?php
                     }
                     ?>
-                </div>
-                <div class="col-md-6">
-                    <p><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></p>
                 </div>
                 <?php
             }

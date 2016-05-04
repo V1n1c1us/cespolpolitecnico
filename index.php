@@ -42,22 +42,24 @@ include('DB/connect.php');
         li {
             list-style: none;
         }
-        ul#menu li.box{
+
+        ul#menu li.box {
             box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px 0px;
         }
-
 
         ul#menu li:hover {
             background: #5cb85c;
             color: white;
         }
-        .thumbnail{
+
+        .thumbnail {
             box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px 0px;
         }
+
         /*#box1 {*/
-            /*box-shadow: 0 0 10px #000000;*/
-            /*-moz-box-shadow: 0 0 10px #000000;*/
-            /*-webkit-box-shadow: 0 0 10px #000000;*/
+        /*box-shadow: 0 0 10px #000000;*/
+        /*-moz-box-shadow: 0 0 10px #000000;*/
+        /*-webkit-box-shadow: 0 0 10px #000000;*/
         /*}*/
     </style>
 </head>
@@ -76,13 +78,14 @@ include('DB/connect.php');
         <div class="masthead">
             <nav>
                 <ul class="nav nav-justified">
-                    <li class="active"><a href="#">Inicio</a></li>
+                    <li class="active"><a href="index.php">Inicio</a></li>
                     <li><a href="#">Objetivos</a></li>
                     <li><a href="#">Associar-se</a></li>
                     <li><a href="#">Diretoria</a></li>
                     <li><a href="#">Contato</a></li>
                     <li><a href="#">Beneficios</a></li>
                     <li><a href="#">Produtos</a></li>
+                    <li><a href="noticias_all.php">Notícias</a></li>
                 </ul>
             </nav>
         </div>
@@ -109,13 +112,14 @@ include('DB/connect.php');
                 ?>
                 <div class="col-xs-4 col-md-4 col-lg-4">
                     <div class="thumbnail" id="box1">
-                        <img class="img img-responsive" src="admin/funcoes/fotosNoticia/<?php echo $foto;?>">
+                        <img class="img img-responsive" src="admin/funcoes/fotosNoticia/<?php echo $foto; ?>">
+
                         <div class="caption">
                             <h2 class="text-center"><?php echo $titulo; ?></h2>
 
                             <small><i class="pull-right fa fa-calendar fa-lg"> <?php echo $data; ?></i></small>
 
-                            <p><?php echo substr($resumo,0, 200);?>...</p>
+                            <p><?php echo substr($resumo, 0, 200); ?>...</p>
 
                             <p><a class="btn btn-primary" href="noticia.php?id=<?php echo $id; ?>" role="button">Leia
                                     Mais.. &raquo;</a></p>
@@ -136,21 +140,32 @@ include('DB/connect.php');
                     <ul id="menu">
                         <li class="btn box" data-toggle="portfilter" data-target="all">Produtos</li>
                         <li class="btn box" data-toggle="portfilter" data-target="colpoli">Colegio Politecnico</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="empoli">Ensino Medio Colegio Politecnico</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="tecnogestcoo">Tecnologo em Gestao de Cooperativas</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="tecnogeo">Tecnologo em Geoprocessamento</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="tecnosist">Tecnologo em Sistemas Para Internet</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="empoli">Ensino Medio Colegio
+                            Politecnico
+                        </li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecnogestcoo">Tecnologo em Gestao de
+                            Cooperativas
+                        </li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecnogeo">Tecnologo em
+                            Geoprocessamento
+                        </li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecnosist">Tecnologo em Sistemas Para
+                            Internet
+                        </li>
                         <li class="btn box" data-toggle="portfilter" data-target="tecinfo">Tecnico em Informatica</li>
                         <li class="btn box" data-toggle="portfilter" data-target="tecpa">Tecnico em Paisagismo</li>
                         <li class="btn box" data-toggle="portfilter" data-target="tecadm">Tecnico em Administracao</li>
                         <li class="btn box" data-toggle="portfilter" data-target="tecagro">Tecnico em Agropecuaria</li>
                         <li class="btn box" data-toggle="portfilter" data-target="tecalim">Tecnico em Alimentos</li>
                         <li class="btn box" data-toggle="portfilter" data-target="teccont">Tecnico em Contabilidade</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="tecgeo">Tecnico em Geoprocessamento</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="tecgeo">Tecnico em Geoprocessamento
+                        </li>
                         <li class="btn box" data-toggle="portfilter" data-target="tecsec">Tecnico em Secretariado</li>
                         <li class="btn box" data-toggle="portfilter" data-target="tecma">Tecnico em Meio Ambiente</li>
                         <li class="btn box" data-toggle="portfilter" data-target="teczoo">Tecnico em Zootecnia</li>
-                        <li class="btn box" data-toggle="portfilter" data-target="colpoli">Pos graduacao Agricultura de Precisao</li>
+                        <li class="btn box" data-toggle="portfilter" data-target="colpoli">Pos graduacao Agricultura de
+                            Precisao
+                        </li>
                     </ul>
                     <br/>
                     <ul class="gallery">

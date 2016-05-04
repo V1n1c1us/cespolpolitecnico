@@ -28,9 +28,10 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-    <script>var CKEDITOR_BASEPATH = '/ckeditor/';</script>
-    <script src="ckeditor.js"></script>
-    <script src="jquery.js"></script>
+<!--    <script>var CKEDITOR_BASEPATH = '/ckeditor/';</script>-->
+<!--    <script src="ckeditor.js"></script>-->
+<!--    <script src="jquery.js"></script>-->
+    <script src="//cdn.ckeditor.com/4.5.8/full/ckeditor.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -58,7 +59,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <?php include('Views/noticia-form.php'); ?>
                 </div>
             </div>
